@@ -18,7 +18,7 @@ int main()
         if (riga == "")
         {                                          // getline(fileInput, riga)){
           
-            cout <<endl << "";
+            cout <<endl;
         }
         else if(i<9){
             i++;
@@ -31,7 +31,7 @@ int main()
         
     }
 
-    fileOutput << "Ei fu. Siccome Immobile" << endl;
+    
 
     fileInput.close();
     fileOutput.close();
