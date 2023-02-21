@@ -6,22 +6,30 @@ using namespace std;
 
 int main()
 {
-    int i =0;
+    int y = 0;
+    int i = 0;
     ifstream fileInput("maggio.txt");
     ofstream fileOutput("output.txt");
 
-
     string riga;
-    while(getline(fileInput, riga))
-    {   
-        i++;
-        cout << i << " - " << riga << endl;
-    
+    while (getline(fileInput, riga))
+    {
+
+        if (riga == "")
+        {                                          // getline(fileInput, riga)){
+          
+            cout <<endl << "";
+        }
+        else
+        {
+          i++;
+            cout << i << " - " << riga << endl;
+        }
+        
     }
-     
-     fileOutput << "Ei fu. Siccome Immobile" << endl;
 
+    fileOutput << "Ei fu. Siccome Immobile" << endl;
 
-     fileInput.close();
-     fileOutput.close();
+    fileInput.close();
+    fileOutput.close();
 }
