@@ -20,17 +20,17 @@ int main()
           
             cout <<endl << "";
         }
-        else
-        {
+        else if(i<9){
+            i++;
+            cout << i << "  - " << riga << endl;
+        }
+        else {
           i++;
-          if (i <10){
-            cout << i << "  -" << riga <<endl;
-          }
-          else { cout << i << " - " << riga << endl;
+            cout << i << " - " << riga << endl;
         }
         
     }
-    }
+
     fileOutput << "Ei fu. Siccome Immobile" << endl;
 
     fileInput.close();
