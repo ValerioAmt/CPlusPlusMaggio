@@ -23,11 +23,14 @@ int main()
         else
         {
           i++;
-            cout << i << " - " << riga << endl;
+          if (i <10){
+            cout << i << "  -" << riga <<endl;
+          }
+          else { cout << i << " - " << riga << endl;
         }
         
     }
-
+    }
     fileOutput << "Ei fu. Siccome Immobile" << endl;
 
     fileInput.close();
